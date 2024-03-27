@@ -5,8 +5,14 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl:"https://demo.productionready.io/#/register",
-  
-    watchForFileChanges:true
+    baseUrl:"https://admin-demo.nopcommerce.com",
+   
+    watchForFileChanges:true,
+    trashAssetsBeforeRuns:true,
+    screenshotOnRunFailure:false,
+    screenshotsFolder:"MyScreenshot",
+    video:true,
+    videosFolder:"myVideo",
+    videoCompression :0 
   }
 });
